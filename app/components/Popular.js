@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { fetchPopularRepos } from '../utils/api'
 import { FaUser, FaStar, FaCodeBranch, FaExclamationTriangle } from 'react-icons/fa'
 
-function LangaugesNav ({ selected, onUpdateLanguage }) {
+function LangsNav ({ selected, onUpdateLanguage }) {
   const languages = ['All', 'JavaScript', 'Ruby', 'Java', 'CSS', 'Python']
 
   return (
@@ -22,7 +22,7 @@ function LangaugesNav ({ selected, onUpdateLanguage }) {
   )
 }
 
-LangaugesNav.propTypes = {
+LangsNav.propTypes = {
   selected: PropTypes.string.isRequired,
   onUpdateLanguage: PropTypes.func.isRequired
 }
@@ -128,8 +128,8 @@ export default class Popular extends React.Component {
     const { selectedLanguage, repos, error } = this.state
 
     return (
-      <React.Fragment>
-        <LangaugesNav
+      <>
+        <LangsNav
           selected={selectedLanguage}
           onUpdateLanguage={this.updateLanguage}
         />
@@ -139,7 +139,7 @@ export default class Popular extends React.Component {
         {error && <p>{error}</p>}
 
         {repos[selectedLanguage] && <ReposGrid repos={repos[selectedLanguage]} />}
-      </React.Fragment>
+      </>
     )
   }
 }
