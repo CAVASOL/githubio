@@ -144,7 +144,7 @@ export default class Battle extends React.Component {
     }
 
     return (
-      <React.Fragment>
+      <>
         <Instructions />
 
         <div className='players-container'>
@@ -185,7 +185,7 @@ export default class Battle extends React.Component {
             </button>
           )}
         </div>
-      </React.Fragment>
+      </>
     )
   }
 }
