@@ -15,15 +15,15 @@ function Instructions () {
           <ol className='container-sm grid center-text battle-instructions'>
             <li>
               <h3 className='header-sm'>Enter two Github users</h3>
-              <FaUserFriends className={`bg-${theme}`} color='rgb(255, 191, 116)' size={120} />
+              <FaUserFriends className={`bg-${theme}`} color='rgb(255, 191, 116)' size={140} />
             </li>
             <li>
               <h3 className='header-sm'>Battle</h3>
-              <FaFighterJet className={`bg-${theme}`} color='#727272' size={120} />
+              <FaFighterJet className={`bg-${theme}`} color='#727272' size={140} />
             </li>
             <li>
               <h3 className='header-sm'>See the winners</h3>
-              <FaTrophy className={`bg-${theme}`} color='rgb(255, 215, 0)' size={120} />
+              <FaTrophy className={`bg-${theme}`} color='rgb(255, 215, 0)' size={140} />
             </li>
           </ol>
         </div>
@@ -167,7 +167,7 @@ export default class Battle extends React.Component {
     }
 
     return (
-      <>
+      <React.Fragment>
         <Instructions />
 
         <div className='players-container'>
@@ -208,7 +208,7 @@ export default class Battle extends React.Component {
             </button>
           )}
         </div>
-      </>
+      </React.Fragment>
     )
   }
 }
