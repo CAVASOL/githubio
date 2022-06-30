@@ -24,6 +24,12 @@ li {
   padding: 50px;
 }
 
+.dark {
+  color: #DADADA;
+  background: #1c2022;
+  min-height: 100%;
+}
+
 .flex-center {
   display: flex;
   justify-content: center;
@@ -52,7 +58,7 @@ li {
 }
 
 .header-lg {
-  font-size: 32px;
+  font-size: 35px;
   font-weight: 300;
   margin: 20px;
 }
@@ -103,7 +109,7 @@ li {
 
 .bg-light {
   background: rgba(0, 0, 0, 0.08);
-  border-radius: 8px;
+  border-radius: 3px;
 }
 
 .card {
@@ -131,7 +137,7 @@ li {
 
 .battle-instructions {
   padding: 0;
-  font-size: 24px;
+  font-size: 25px;
 }
 
 .battle-instructions li {
@@ -239,26 +245,4 @@ li {
   color: #ff1616;
   font-size: 20px;
   margin: 50px 0;
-}
-
-.loadingSpinnerContainer {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 5000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.loadingSpinner {
-  width: 64px;
-  height: 64px;
-  border: 8px solid;
-  border-color: #000 transparent #555 transparent;
-  border-radius: 50%;
-  animation: spin 1.2s linear infinite;
 }
