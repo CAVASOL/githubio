@@ -3,32 +3,38 @@ import { battle } from '../utils/api'
 import { FaCompass, FaBriefcase, FaUsers, FaUserFriends, FaCode, FaUser } from 'react-icons/fa'
 import Card from './Card'
 import PropTypes from 'prop-types'
+import Loading from './Loading'
+import Tooltip from './Tooltip'
 
 function ProfileList ({ profile }) {
   return (
     <ul className='card-list'>
       <li>
-        <FaUser color='rgb(239, 115, 115' size={22} />
+        <FaUser color='rgb(239, 115, 115)' size={22} />
         {profile.name}
       </li>
       {profile.location && (
         <li>
-          <FaCompass color='rgb(144, 115, 255' size={22} />
-          {profile.location}
+          <Tooltip text="User's location">
+            <FaCompass color='rgb(144, 115, 255)' size={22} />
+            {profile.location}
+          </Tooltip>
         </li>
       )}
       {profile.company && (
         <li>
-          <FaCompass color='#795548' size={22} />
-          {profile.company}
+          <Tooltip text="User's company">
+            <FaBriefcase color='#795548' size={22} />
+            {profile.company}
+          </Tooltip>
         </li>
       )}
       <li>
-        <FaUsers color='rgb(129, 195, 245' size={22} />
+        <FaUsers color='rgb(129, 195, 245)' size={22} />
         {profile.followers.toLocaleString()} followers
       </li>
       <li>
-        <FaUserFriends color='rgb(64, 183, 95' size={22} />
+        <FaUserFriends color='rgb(64, 183, 95)' size={22} />
         {profile.following.toLocaleString()} following
       </li>
     </ul>
@@ -72,7 +78,7 @@ export default class Results extends React.Component {
     const { winner, loser, error, loading } = this.state
 
     if (loading === true) {
-      return <p>LOADING</p>
+      return <Loading text='Battling' />
     }
 
     if (error) {
@@ -91,24 +97,22 @@ export default class Results extends React.Component {
             href={winner.profile.html_url}
             name={winner.profile.login}
           >
-            <ProfileList profile={winner.profile} />
+            <ProfileList profile={winner.profile}/>
           </Card>
-
           <Card
             header={winner.score === loser.score ? 'Tie' : 'Loser'}
             subheader={`Score: ${loser.score.toLocaleString()}`}
             avatar={loser.profile.avatar_url}
-            href={loser.profile.html_url}
             name={loser.profile.login}
+            href={loser.profile.html_url}
           >
-            <ProfileList profile={loser.profile} />
+            <ProfileList profile={loser.profile}/>
           </Card>
         </div>
         <button
           onClick={this.props.onReset}
-          className='btn dark-btn btn-space'
-        >
-          Reset
+          className='btn dark-btn btn-space'>
+            Reset
         </button>
       </>
     )
@@ -117,6 +121,6 @@ export default class Results extends React.Component {
 
 Results.propTypes = {
   playerOne: PropTypes.string.isRequired,
-  playerTWo: PropTypes.string.isRequired,
+  playerTwo: PropTypes.string.isRequired,
   onReset: PropTypes.func.isRequired
 }
