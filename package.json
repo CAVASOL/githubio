@@ -1,5 +1,5 @@
 {
-  "name": "github-battle",
+  "name": "githubio",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -35,6 +35,7 @@
     "@babel/preset-env": "^7.18.2",
     "@babel/preset-react": "^7.17.12",
     "babel-loader": "^8.2.5",
+    "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^6.7.1",
     "html-webpack-plugin": "^5.5.0",
     "style-loader": "^3.3.1",
