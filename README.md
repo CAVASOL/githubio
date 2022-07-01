@@ -4,4 +4,4 @@ This project is a "Githubio" app. You'll be able to see the most popular repos f
 
 <img align="center" src="./githubio1.png" width="800px" />
 <br />
-<img align="center" src="./githubio1.png" width="800px" />
+<img align="center" src="./githubio2.png" width="800px" />
