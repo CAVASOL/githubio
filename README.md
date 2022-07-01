@@ -1,6 +1,6 @@
 # Githubio
 
-This project is a "Githubio" app. You'll be able to see the most popular repos for a variety of languages as well as battle two Github users to see who has the better profile.
+This project is a "Githubio" app from ui.dev's "React" course project. You'll be able to see the most popular repos for a variety of languages as well as battle two Github users to see who has the better profile.
 
 ## Popular preview
 
