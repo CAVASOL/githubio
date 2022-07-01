@@ -6,18 +6,18 @@ This project is a "Githubio" app from ui.dev's "React" course project. You'll be
 
 Light Mode          |  Dark Mode
 :-------------------------:|:-------------------------:
-<img align="center" src="./popularl.png" width="360px" />
-<img align="center" src="./railsl.png" width="360px" />
+<img align="center" src="./pictures/popularl.png" width="360px" />
+<img align="center" src="./pictures/rubyl.png" width="360px" />
 |
-<img align="center" src="./populard.png" width="360px" />
-<img align="center" src="./railsd.png" width="360px" />
+<img align="center" src="./pictures/populard.png" width="360px" />
+<img align="center" src="./pictures/rubyd.png" width="360px" />
 
 ## Battle preview
 
 Light Mode          |  Dark Mode
 :-------------------------:|:-------------------------:
-<img align="center" src="./battlel.png" width="360px" />
-<img align="center" src="./resultl.png" width="360px" />
+<img align="center" src="./pictures/battlel.png" width="360px" />
+<img align="center" src="./pictures/resultl.png" width="360px" />
 |
-<img align="center" src="./battled.png" width="360px" />
-<img align="center" src="./resultd.png" width="360px" />
+<img align="center" src="./pictures/battled.png" width="360px" />
+<img align="center" src="./pictures/resultd.png" width="360px" />
